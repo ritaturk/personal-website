@@ -32,7 +32,8 @@
       "Bash(echo 'export PATH=\"$HOME/.npm-global/bin:$PATH\"')",
       "Read(//Users/ritaturkowski/**)",
       "Bash(touch .env)",
-      "Bash(cat)"
+      "Bash(cat)",
+      "Bash(gh repo *)"
     ]
   }
 }
