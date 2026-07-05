@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.200",
+    "claude-cli": "^1.0.5"
+  }
+}

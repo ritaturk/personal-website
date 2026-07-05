@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL -o oculus-start-header.jpg \"https://scontent-sjc6-1.xx.fbcdn.net/v/t39.2365-6/26814029_144600776256317_7980295900234776576_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=873e83&_nc_ohc=IAwalW4zsmsQ7kNvwHc3QSh&_nc_oc=AdrWJX21RkLqa5VuD_L7JCPhDzSuaimx8Am9ML_Gops-2BUQD1hAbgjcpQsy1FQwUWU&_nc_zt=14&_nc_ht=scontent-sjc6-1.xx&_nc_gid=m4JfB6I_ZwFlcXNpwJjR3g&_nc_ss=7f20f&oh=00_AQDj4KnohRobNLqG9i3TyRzZI4lUlivAygAaFsNnCYInKg&oe=6A4F14F9\")",
+      "Bash(open *)",
+      "Bash(python3 -m http.server 8000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8000/)",
+      "Bash(npx --yes http-server -p 8000 -c-1)",
+      "WebFetch(domain:developers.meta.com)",
+      "Bash(curl -sL -o app-lab-header.jpg \"https://scontent-sjc3-1.xx.fbcdn.net/v/t39.2365-6/145439647_859112401546343_5034401412607724516_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=873e83&_nc_ohc=E_wmof5BLOcQ7kNvwGlTpDV&_nc_oc=Adotf5KX_9u0Tfku-MQwyNT91h01b8Gmy6Ssi0WcKMamFZU8VavbkCQniNn2MTRmIUE&_nc_zt=14&_nc_ht=scontent-sjc3-1.xx&_nc_gid=fFg8xVgwA0uKD9yjr4f0KA&_nc_ss=7f20f&oh=00_AQBXvddbiJ93z6Z_ClLbB75Q10QiCbT28g5n0yVqx3-XSw&oe=6A4F351F\")",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(curl -sL -o meta-logo.svg \"https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg\")",
+      "Bash(qlmanage -t -s 400 -o . meta-logo.svg)",
+      "WebFetch(domain:peterhowell.io)",
+      "Bash(curl -sL -o lunarg-logo.png \"https://upload.wikimedia.org/wikipedia/en/b/b3/LunarG_logo.png\")",
+      "Bash(curl -sL -o amd-logo.svg \"https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg\")",
+      "Bash(curl -sL -o unity-logo.svg \"https://upload.wikimedia.org/wikipedia/commons/c/c4/Unity_2021.svg\")",
+      "Bash(curl -sL -o intel-logo.svg \"https://upload.wikimedia.org/wikipedia/commons/8/85/Intel_logo_2023.svg\")",
+      "Bash(curl -sL -o apple-logo.svg \"https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg\")",
+      "Bash(qlmanage -t -s 200 -o . lunarg-logo.png amd-logo.svg unity-logo.svg intel-logo.svg apple-logo.svg)",
+      "Bash(curl -sL -o cuny-seal.svg \"https://upload.wikimedia.org/wikipedia/en/a/a2/City_University_of_New_York_seal.svg\")",
+      "Bash(curl -sL -o stevens-seal.svg \"https://upload.wikimedia.org/wikipedia/en/8/8e/Seal_of_Stevens_Institute_of_Technology.svg\")",
+      "Bash(qlmanage -t -s 200 -o . cuny-seal.svg stevens-seal.svg)",
+      "Bash(gh auth *)",
+      "Bash(brew install *)",
+      "Bash(git *)",
+      "Bash(npm -v)",
+      "Bash(npm config *)",
+      "Read(//usr/local/lib/node_modules/**)",
+      "Bash(claude --version)",
+      "Bash(mkdir -p ~/.npm-global)",
+      "Bash(echo 'export PATH=\"$HOME/.npm-global/bin:$PATH\"')",
+      "Read(//Users/ritaturkowski/**)",
+      "Bash(touch .env)",
+      "Bash(cat)"
+    ]
+  }
+}
