@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "start": "serve -s OUTPUTS/website -l $PORT"
+  },
   "dependencies": {
     "@anthropic-ai/claude-code": "^2.1.200",
-    "claude-cli": "^1.0.5"
+    "claude-cli": "^1.0.5",
+    "serve": "^14.2.3"
   }
 }
