@@ -108,18 +108,39 @@ body {
   flex-shrink: 0;
 }
 
-.cta {
-  display: inline-block;
-  color: var(--ink);
-  text-decoration: none;
-  border-bottom: 1px solid var(--ink);
-  padding-bottom: 2px;
-  font-weight: 500;
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0 28px;
 }
 
-.cta:hover {
-  color: var(--gray);
-  border-color: var(--gray);
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.icon-btn:hover {
+  background: var(--bg-soft);
+  border-color: var(--ink);
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.contact .icon-btn {
+  margin: 0 auto;
 }
 
 /* Sections */
@@ -203,6 +224,51 @@ body {
 
 .entry-points li {
   margin-bottom: 8px;
+}
+
+.entry-desc {
+  margin: 0;
+  color: var(--gray);
+}
+
+.entry-desc a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+}
+
+.entry-desc a:hover {
+  color: var(--gray);
+}
+
+.section-intro {
+  color: var(--gray);
+  margin: 0 0 32px;
+}
+
+/* Speaking */
+.speaking-entry {
+  margin-bottom: 32px;
+}
+
+.speaking-entry:last-child {
+  margin-bottom: 0;
+}
+
+.speaking-entry h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.speaking-entry h3 a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.speaking-entry h3 a:hover {
+  color: var(--gray);
+  border-color: var(--gray);
 }
 
 /* Tags */
@@ -364,6 +430,10 @@ body {
 
   .previously {
     justify-content: flex-start;
+  }
+
+  .icon-row {
+    justify-content: center;
   }
 
   .section {
