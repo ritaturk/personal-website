@@ -226,6 +226,50 @@ body {
   margin-bottom: 8px;
 }
 
+/* Retain Me gate */
+.gate-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.gate-form input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.gate-form input[type="email"]::placeholder {
+  color: var(--light-gray);
+}
+
+.gate-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+
+.gate-form button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #000;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.gate-form button:hover {
+  opacity: 0.85;
+}
+
 .entry-desc {
   margin: 0;
   color: var(--gray);
