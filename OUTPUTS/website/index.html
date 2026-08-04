@@ -227,8 +227,73 @@
       <h2><span class="section-number">05</span> Writing</h2>
     </section>
 
+    <section class="section" id="retain-me">
+      <h2><span class="section-number">06</span> Retain Me</h2>
+
+      <div id="retain-gate">
+        <p class="entry-desc">Enter your email to see what you get when you retain me.</p>
+        <form id="retain-gate-form" class="gate-form">
+          <input type="email" id="retain-gate-email" placeholder="you@email.com" required autocomplete="email">
+          <button type="submit">Unlock</button>
+        </form>
+      </div>
+
+      <div id="retain-content" hidden>
+        <p class="entry-desc">Interested in working together? Reach out at <a href="mailto:ritaturk@gmail.com">ritaturk@gmail.com</a>.</p>
+
+        <div class="entry">
+          <h3>What you get when you retain me</h3>
+        </div>
+
+        <div class="entry">
+          <div class="entry-titles">
+            <h3>Weekly</h3>
+            <p class="entry-meta">$1,000/week</p>
+          </div>
+          <ul class="entry-points">
+            <li>Three 2-hour calls</li>
+            <li>2 docs: updated "Creators of Note to Target" and "Agencies by Support Area"</li>
+            <li>2 social pushes of your app's announcements of your choice on Reddit, LinkedIn, and X</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-titles">
+            <h3>Monthly</h3>
+          </div>
+        </div>
+
+        <div class="entry">
+          <div class="entry-titles">
+            <h3>Quarterly</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var gate = document.getElementById('retain-gate');
+        var content = document.getElementById('retain-content');
+        var form = document.getElementById('retain-gate-form');
+        var KEY = 'retainMeUnlocked';
+
+        if (localStorage.getItem(KEY)) {
+          gate.hidden = true;
+          content.hidden = false;
+        }
+
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          localStorage.setItem(KEY, '1');
+          gate.hidden = true;
+          content.hidden = false;
+        });
+      })();
+    </script>
+
     <section class="section" id="education" style="border-bottom: none;">
-      <h2><span class="section-number">06</span> Education</h2>
+      <h2><span class="section-number">07</span> Education</h2>
       <div class="entry">
         <div class="entry-header">
           <div class="entry-logo entry-logo--seal"><img src="images/stevens-seal.svg" alt="Stevens Institute of Technology"></div>
